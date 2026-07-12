@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pacman by Stranger Things</title>
+    <meta name="description" content="Canvas arcade game in a Pacman and Stranger Things style.">
+    <link rel="stylesheet" href="files/css/styles.css">
+  </head>
+  <body>
+    <main class="arcade-shell">
+      <section class="top-panel" aria-label="Game status">
+        <div class="score-grid" aria-label="Scoreboard">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Level</span>
+            <strong id="level">1</strong>
+          </div>
+          <div>
+            <span>Lives</span>
+            <strong id="lives">3</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-frame" aria-label="Game board">
+        <canvas id="game" width="680" height="920" role="img" aria-label="Pacman game board in a Stranger Things style">
+          Pacman game board. Start the game with Enter or Space.
+        </canvas>
+        <div class="start-screen active" id="start-screen" role="dialog" aria-modal="true" aria-labelledby="character-select-title">
+          <div class="start-content">
+            <div class="logo-lockup intro-logo" aria-label="Pacman by Stranger Things">
+              <h1 class="game-logo">
+                <span class="logo-main">Pacman</span>
+                <span class="logo-by">by</span>
+                <span class="logo-sub">
+                  <span>Stranger</span>
+                  <span>Things</span>
+                </span>
+              </h1>
+            </div>
+            <p class="screen-kicker" id="character-select-title">Choose character</p>
+            <div class="character-grid" id="character-grid"></div>
+            <div class="start-actions">
+              <button class="primary-button" id="start-button" type="button">Start game</button>
+              <p class="sound-credit">
+                Sound Effect by
+                <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844" target="_blank" rel="noopener">freesound_community</a>
+                from
+                <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844" target="_blank" rel="noopener">Pixabay</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay" id="game-over-screen" role="dialog" aria-modal="true" aria-labelledby="game-over-title">
+          <div class="overlay-panel compact">
+            <p class="screen-kicker">Game Over</p>
+            <h2 id="game-over-title">Final score</h2>
+            <p class="final-score" id="final-score">Score 0</p>
+            <section class="top-score-box" aria-labelledby="top-score-title">
+              <h3 id="top-score-title">Top 6</h3>
+              <ol id="top-scores"></ol>
+            </section>
+            <button class="primary-button" id="restart-button" type="button">Play again</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-panel">
+        <div class="status-line" id="status" role="status" aria-live="polite">Enter/Space starts. Controls: arrows, WASD, IJKL, numpad, or joystick.</div>
+      </section>
+    </main>
+
+    <audio id="background-music" src="files/sound/freesound_community-circuit-synthwave-alt-23844.mp3" preload="auto" loop></audio>
+    <script src="files/js/game.js"></script>
+  </body>
+</html>
