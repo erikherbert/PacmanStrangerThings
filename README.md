@@ -1,28 +1,28 @@
-# Pacman by Stranger Things
+# Pac-Man by Stranger Things
 
-Ein statisches Canvas-Arcade-Spiel im Pac-Man- und Stranger-Things-Stil. Das Projekt läuft komplett im Browser und braucht kein Backend, keine Datenbank und keinen Build-Schritt.
+A static browser arcade game inspired by Pac-Man gameplay and a Stranger Things visual mood. The project runs entirely in the browser and does not require a backend, database, package manager, or build step.
 
 ## Start
 
-Direkt öffnen:
+Open the HTML file directly:
 
 ```bash
 open index.html
 ```
 
-Oder lokal per HTTP starten:
+Or serve the project locally over HTTP:
 
 ```bash
 python3 -m http.server 8001
 ```
 
-Danach im Browser öffnen:
+Then open:
 
 ```text
 http://127.0.0.1:8001/index.html
 ```
 
-## Struktur
+## Structure
 
 ```text
 index.html
@@ -35,27 +35,27 @@ files/
 
 ## Features
 
-- Intro mit Character-Auswahl
-- Tastatur- und Gamepad-Steuerung
-- Canvas-Spielfeld mit zwei unterschiedlichen Level-Layouts
-- Demogorgon-Gegner mit Pixelanimation
-- Power-Waffeln statt klassischer Power-Pellets
-- Top-6-Punkteliste im Browser per `localStorage`
-- Kein Name-Input, keine Datenbank, kein PHP
+- Intro screen with character selection
+- Keyboard and gamepad controls
+- Canvas-based game board with two different level layouts
+- Animated Demogorgon-style enemies
+- Power Waffles instead of classic power pellets
+- Local Top 6 score list stored in `localStorage`
+- No name input, no database, no PHP backend
 
-## Steuerung
+## Controls
 
-- Pfeiltasten oder WASD
-- Alternativ IJKL, Numpad 2/4/6/8 oder Standard-Gamepad
-- Enter, Leertaste oder Gamepad-Button startet im Menü
-- Nach Game Over bringt `Play again`, Enter oder Leertaste zurück zur Character-Auswahl
+- Arrow keys or WASD
+- IJKL, numpad 2/4/6/8, or a standard gamepad also work
+- Enter, Space, or the gamepad start button starts the game from the menu
+- After Game Over, `Play again`, Enter, or Space returns to character selection
 
 ## Credits
 
-Hintergrundsound: Sound Effect by [freesound_community](https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844) from [Pixabay](https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844).
+Background sound: Sound Effect by [freesound_community](https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844) from [Pixabay](https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=23844).
 
-Die Schrift `Jersey 10` stammt von Google Fonts.
+The `Jersey 10` font is from Google Fonts.
 
-## Lizenzhinweis
+## License Notes
 
-Der Quellcode steht unter MIT-Lizenz. Externe Assets wie Sound und Font unterliegen ihren jeweiligen Ursprungslizenzen. Marken- und Stilreferenzen an Pac-Man oder Stranger Things sind nur als Fan-/Prototyp-Kontext zu verstehen.
+The source code is released under the MIT License. External assets such as the sound and font remain under their original licenses. Pac-Man and Stranger Things references are used only as fan/prototype context.

@@ -1,31 +1,31 @@
 # Game Rules
 
-## Ziel
+## Goal
 
-Sammle alle Punkte und Power-Waffeln im Labyrinth ein, ohne von den Demogorgons erwischt zu werden. Wenn alle Punkte eines Levels eingesammelt sind, startet das nächste Level.
+Collect all dots and Power Waffles in the maze while avoiding the Demogorgons. When all dots in a level are collected, the next level starts.
 
-## Leben
+## Lives
 
-Du startest mit 3 Leben. Berührt dich ein Demogorgon ohne aktives Power-up, verlierst du ein Leben. Bei 0 Leben endet die Runde.
+You start with 3 lives. If a Demogorgon touches you while no power-up is active, you lose one life. The round ends when you have no lives left.
 
-## Punkte
+## Scoring
 
-- Kleiner Punkt: 10 Punkte
-- Power-Waffel: 50 Punkte
-- Verwundbarer Demogorgon: 200 Punkte, mit steigender Kette entsprechend mehr
+- Small dot: 10 points
+- Power Waffle: 50 points
+- Vulnerable Demogorgon: 200 points, with higher values for chained captures
 
-## Power-Waffeln
+## Power Waffles
 
-Nach dem Einsammeln einer Power-Waffel werden Demogorgons für kurze Zeit verwundbar. Die Dauer hängt vom gewählten Character ab.
+After collecting a Power Waffle, Demogorgons become vulnerable for a short time. The duration depends on the selected character.
 
-## Character
+## Characters
 
-Jeder Character hat leicht unterschiedliche Werte für Tempo und Power-up-Dauer. Die Auswahl erfolgt im Intro per Maus, Tastatur oder Gamepad.
+Each character has slightly different speed and power-up duration values. Select a character in the intro screen with mouse, keyboard, or gamepad.
 
-## Level
+## Levels
 
-Level 1 nutzt das klassische Labyrinth. Ab Level 2 startet das Upside-Down-Layout mit anderer Wandführung, mehr Punkten, mehr Gegnern und höherem Tempo.
+Level 1 uses the classic maze. Starting with Level 2, the Upside Down layout changes the wall structure, adds more dots, increases enemy count, and raises the pace.
 
 ## Top 6
 
-Nach Game Over wird deine Punktzahl automatisch lokal im Browser gespeichert. Es werden nur Zahlen gespeichert, keine Namen. Die besten 6 Ergebnisse werden im Game-Over-Screen angezeigt.
+After Game Over, your score is saved locally in the browser. Only numeric scores are stored. No names are collected. The best 6 scores appear on the Game Over screen.
